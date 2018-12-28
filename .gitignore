@@ -1,0 +1,29 @@
+# This was painful. Very painful.
+
+# ignore everything rescursively
+*
+
+# except for (allow these) .gitignore, README.md, etc.
+!.gitignore
+!README.md
+!ssh
+!test.txt
+!zomg.wtf
+
+# allow *looking* into this folder hahlpmeplzwhyisthisathingimdieingontheinside
+!folder1
+#allow this one file
+!folder1/file1
+# allow *looking* into folder1/coughigs
+!folder1/coughigs
+# allow everything *in* coughigs
+!folder1/coughigs/*
+
+# srslywutswrongwith
+#!folder1/file1
+#!folder1/coughigs*
+# whydoweneedtwoextralines
+# #SpoiledBrasht
+
+!folder2/
+!folder2/file2
