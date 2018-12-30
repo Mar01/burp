@@ -1,29 +1,22 @@
-# This was painful. Very painful.
+# ignore everything in the immediate directory (non-rescursively)
+/*
 
-# ignore everything rescursively
-*
-
-# except for (allow these) .gitignore, README.md, etc.
+# except for .gitignore, README.md, etc.
 !.gitignore
 !README.md
 !ssh
 !test.txt
 !zomg.wtf
 
-# allow *looking* into this folder hahlpmeplzwhyisthisathingimdieingontheinside
+# allow this folder *and everything* in it (recursively)
 !folder1
-#allow this one file
+# now only allow the folder but nothing in it
+folder1/*
+#except this one file
 !folder1/file1
-# allow *looking* into folder1/coughigs
+# and this folder *and* everything in it
 !folder1/coughigs
-# allow everything *in* coughigs
-!folder1/coughigs/*
-
-# srslywutswrongwith
-#!folder1/file1
-#!folder1/coughigs*
-# whydoweneedtwoextralines
-# #SpoiledBrasht
 
 !folder2/
+folder2/*
 !folder2/file2
