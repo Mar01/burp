@@ -15,7 +15,7 @@ folder1/*
 #except this one file
 !folder1/file1
 # and this folder *and* everything in it
-!folder1/coughigs
+!folder1/coughigs/
 
 !folder2/
 folder2/*
